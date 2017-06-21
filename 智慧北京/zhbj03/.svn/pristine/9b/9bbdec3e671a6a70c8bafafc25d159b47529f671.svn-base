@@ -1,0 +1,32 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <!-- Ctrl+SHift+C 生成 xml的注释 -->
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <!-- 有viewpager -->
+    <!-- 有开始体验 -->
+
+    <Button
+        android:padding="5dp"
+        android:visibility="gone"
+        android:background="@drawable/selector_btn_red"
+        android:id="@+id/btn_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="开始体验"
+        android:layout_marginBottom="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:textColor="#FFFFFF" />
+    <!-- 小圆点 -->
+<!--     回头讲 -->
+
+</RelativeLayout>

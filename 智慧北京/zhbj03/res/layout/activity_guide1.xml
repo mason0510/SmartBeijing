@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" xmlns:app="http://schemas.android.com/apk/res/com.itcast.news03">
+
+    <!-- Ctrl+SHift+C 生成 xml的注释 -->
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <!-- 有viewpager -->
+    <!-- 有开始体验 -->
+
+    <Button
+        android:id="@+id/btn_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/selector_btn_red"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="开始体验"
+        android:textColor="#FFFFFF"
+        android:visibility="gone" />
+    <!-- 小圆点 -->
+
+<!-- 属性说明 pageColor默认颜色 -->
+<!-- fillColor小红点颜色 -->
+<!-- radius小红点的大小 -->
+<!-- strokeWidth边线宽度 -->
+    <com.viewpagerindicator.CirclePageIndicator
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        app:pageColor="#D4D0C8"
+        app:fillColor="#B6150D"
+        app:radius="5dp"
+        android:padding="3dp"
+        app:strokeWidth="0dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/circle_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
